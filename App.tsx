@@ -9,6 +9,8 @@ import theme from './src/theme';
 import { Groups } from '@screens/Groups';
 import { NewGroup } from '@screens/NewGroup';
 import { Players } from '@screens/Players';
+import { Routes } from './src/routes';
+import { AppRoutes } from 'src/routes/app.routes';
 
 
 
@@ -23,7 +25,7 @@ export default function App() {
         backgroundColor='transparent'
         translucent
       />
-      { fontsLoaded ? <Groups/> : <Loading/> }
+      { fontsLoaded ? <Routes/> : <Loading/> }
     </ThemeProvider>
 
   );
